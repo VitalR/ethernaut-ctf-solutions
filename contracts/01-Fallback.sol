@@ -17,7 +17,7 @@ contract Fallback {
     }
 
     function contribute() public payable {
-        require(msg.value < 0.001 ether);
+        require(msg.value < 0.001 ether, "");
         contributions[msg.sender] += msg.value;
         if(contributions[msg.sender] > contributions[owner]) {
             owner = msg.sender;
@@ -33,7 +33,7 @@ contract Fallback {
     }
 
     receive() external payable {
-        require(msg.value > 0 && contributions[msg.sender] > 0);
+        require(msg.value > 0 && contributions[msg.sender] > 0, "");
         owner = msg.sender;
     }
 }
