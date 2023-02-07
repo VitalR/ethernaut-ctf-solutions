@@ -2,5 +2,7 @@
 /* tslint:disable */
 /* eslint-disable */
 export type { Fallback } from "./Fallback";
+export type { Fallout } from "./Fallout";
 
 export { Fallback__factory } from "./factories/Fallback__factory";
+export { Fallout__factory } from "./factories/Fallout__factory";

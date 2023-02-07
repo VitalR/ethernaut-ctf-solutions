@@ -16,12 +16,21 @@ declare module "hardhat/types/runtime" {
       name: "Fallback",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Fallback__factory>;
+    getContractFactory(
+      name: "Fallout",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.Fallout__factory>;
 
     getContractAt(
       name: "Fallback",
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Fallback>;
+    getContractAt(
+      name: "Fallout",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.Fallout>;
 
     // default types
     getContractFactory(
