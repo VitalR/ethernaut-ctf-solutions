@@ -20,6 +20,14 @@ declare module "hardhat/types/runtime" {
       name: "Fallout",
       signerOrOptions?: ethers.Signer | FactoryOptions
     ): Promise<Contracts.Fallout__factory>;
+    getContractFactory(
+      name: "CoinFlip",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.CoinFlip__factory>;
+    getContractFactory(
+      name: "CoinFlipAttacker",
+      signerOrOptions?: ethers.Signer | FactoryOptions
+    ): Promise<Contracts.CoinFlipAttacker__factory>;
 
     getContractAt(
       name: "Fallback",
@@ -31,6 +39,16 @@ declare module "hardhat/types/runtime" {
       address: string,
       signer?: ethers.Signer
     ): Promise<Contracts.Fallout>;
+    getContractAt(
+      name: "CoinFlip",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.CoinFlip>;
+    getContractAt(
+      name: "CoinFlipAttacker",
+      address: string,
+      signer?: ethers.Signer
+    ): Promise<Contracts.CoinFlipAttacker>;
 
     // default types
     getContractFactory(

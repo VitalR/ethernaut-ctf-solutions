@@ -3,6 +3,10 @@
 /* eslint-disable */
 export type { Fallback } from "./Fallback";
 export type { Fallout } from "./Fallout";
+export type { CoinFlip } from "./CoinFlip";
+export type { CoinFlipAttacker } from "./CoinFlipAttacker";
 
 export { Fallback__factory } from "./factories/Fallback__factory";
 export { Fallout__factory } from "./factories/Fallout__factory";
+export { CoinFlip__factory } from "./factories/CoinFlip__factory";
+export { CoinFlipAttacker__factory } from "./factories/CoinFlipAttacker__factory";
