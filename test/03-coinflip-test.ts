@@ -27,7 +27,7 @@ describe(CONTRACT_NAME, () => {
         await attackerContract.deployed()
     })
 
-    it.only("Should be possible to guess the correct outcome 10 times", async () => {
+    it("Should be possible to guess the correct outcome 10 times", async () => {
         for (let i = 0; i < 10; i++) {
             tx = await attackerContract.connect(attacker).attack()
             await tx.wait(1)

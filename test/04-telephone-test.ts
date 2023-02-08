@@ -27,7 +27,7 @@ describe(CONTRACT_NAME, () => {
         await attackerContract.deployed()
     })
 
-    it.only("Should be possible to claim ownership of the contract", async () => {
+    it("Should be possible to claim ownership of the contract", async () => {
         tx = await attackerContract.connect(attacker).changeOwnership()
         await tx.wait()
 
