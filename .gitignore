@@ -69,8 +69,8 @@ Thumbs.db
 **/node_modules
 **/src/types
 **/draft
-**/typechain
-**/typechain-types
+typechain
+typechain-types
 
 # files
 *.env
