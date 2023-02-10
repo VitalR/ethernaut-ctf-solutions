@@ -1,13 +1,14 @@
 {
-  "name": "ethernaut-ts-new",
+  "name": "ethernaut-solutions-ts",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx hardhat test"
+    "test": "npx hardhat test",
+    "compile": "npx hardhat compile"
   },
   "keywords": [],
-  "author": "",
+  "author": "VitalR",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.2.2",
