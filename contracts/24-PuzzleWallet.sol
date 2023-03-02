@@ -2,7 +2,7 @@
 pragma solidity ^0.8.17;
 pragma experimental ABIEncoderV2;
 
-import "./UpgradeableProxy-08.sol";
+import "./helpers/UpgradeableProxy-08.sol";
 
 contract PuzzleProxy is UpgradeableProxy {
     address public pendingAdmin;
